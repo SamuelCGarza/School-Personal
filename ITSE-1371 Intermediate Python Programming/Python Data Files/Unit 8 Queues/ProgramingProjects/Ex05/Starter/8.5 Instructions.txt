@@ -1,0 +1,32 @@
+In real life, customers do not choose a random cashier when they check out. They typically base their choice on at least the following two factors:
+
+The length of a line of customers waiting to check out.
+The physical proximity of a cashier.
+Modify the simulation of Exercise 4 so that it takes account of the first factor.
+
+In the Cashier class of the cashier.py file, complete the following:
+
+Define the getLineLength() method:
+Returns the number of customers in the line.
+In the MarketModel class of the marketmodel.py file, complete the following:
+
+Define the pickCashier() method:
+Returns the cashier for the next customer, based on the shortest line of customers.
+To test your program run the main() method in the marketapp.py file.
+
+Your program's output should look like the following:
+
+Welcome to the Market Simulator!
+
+Enter the total running time: 30
+Enter the average processing time per customer: 3
+Enter the probability of a new arrival: 1
+Enter the number of cashiers: 4
+
+----------------------------------------
+CASHIER CUSTOMERS   AVERAGE     LEFT IN
+        PROCESSED   WAIT TIME   LINE
+   1        0          0.00        0
+   2        9          0.00        0
+   3       10          1.80        0
+   4       10          1.80        1

@@ -1,0 +1,18 @@
+A simple course management system models a student’s information with a name and a set of test scores. This system should be able to create a student object with a given name and a number of scores, all of which will be 0 at startup.
+
+The system should be able to access or replace a score at the given position (counting from 0):
+
+obtain the number of scores - getNumberOfScores()
+obtain the highest score - getHighScore()
+obtain the average score - getAverage()
+obtain the student’s name - getName()
+In addition, the student object when printed should show the student’s name and scores as in the following example:
+
+Name: Ken Lambert 
+Score 1: 88 
+Score 2: 77 
+Score 3: 100 
+High score: 100
+Average: 88.333
+
+Define a Student class that supports these features and behavior. A main() has been provided for you in order to test the implementation of your Student class.

@@ -1,0 +1,21 @@
+Statisticians would like to have a set of functions to compute the median and mode of a list of numbers.
+
+Define the three functions median, mode, mean in the stats.py file.
+The median is the number that would appear at the midpoint of a list if it were sorted.
+The mode is the number that appears most frequently in the list.
+Each function expects a list of numbers as an argument and returns a single number.
+Also include a function named mean, which computes the average of a set of numbers. The main() has been provided for you.
+Your program's output should look like the following:
+
+Enter a Value for the list: 41
+Enter a Value for the list: 42
+Enter a Value for the list: 43
+Enter a Value for the list: 44
+Enter a Value for the list: 45
+Enter a Value for the list: 46
+List: [41, 42, 43, 44, 45, 46]
+Mode: 41
+Median: 43.5
+Mean: 43.5
+
+The test above was done with the list [41, 42, 43, 44, 45, 46]. Be sure to test with the same list.

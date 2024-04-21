@@ -1,0 +1,128 @@
+In the LinkedBST class of the linkedbst.py file, complete the following:
+
+Be sure to reuse your solution from Programming Exercise 10.2 as your starter file for the linkedbst.py file.
+
+Add and define the rebalance() method.
+The method copies the tree’s items to a list during an inorder traversal and then clears the tree.
+The method then copies the items from the list back to the tree in such a manner that the shape of the tree is balanced.
+Hint: Use a recursive helper function that repeatedly visits the items at the midpoints of portions of the list.
+
+To test your program run the main() method in the testbst.py file.
+
+Adding D B A C F E G
+
+Expect True for A in tree:  True
+
+String:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+
+Clone:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+Expect True for tree == clone:  True
+
+For loop: D B A C F E G 
+
+inorder traversal: A B C D E F G 
+
+preorder traversal: D B A C F E G 
+
+postorder traversal: A C B E G F D 
+
+levelorder traversal: D B F A C E G 
+
+Removing all items: A B C D E F G 
+
+Expect 0:  0
+
+Added 1..15:
+| | | | | | | | | | | | | | 15
+| | | | | | | | | | | | | 14
+| | | | | | | | | | | | 13
+| | | | | | | | | | | 12
+| | | | | | | | | | 11
+| | | | | | | | | 10
+| | | | | | | | 9
+| | | | | | | 8
+| | | | | | 7
+| | | | | 6
+| | | | 5
+| | | 4
+| | 3
+| 2
+1
+
+
+Height = 14
+
+Is balanced = False
+
+Rebalancing ...
+| | | 15
+| | 14
+| | | 13
+| 12
+| | | 11
+| | 10
+| | | 9
+8
+| | | 7
+| | 6
+| | | 5
+| 4
+| | | 3
+| | 2
+| | | 1
+
+
+Added  [5, 11, 8, 15, 14, 2, 12, 3, 9, 4, 13, 1, 10, 7, 6] 
+| | 15
+| | | 14
+| | | | | 13
+| | | | 12
+| 11
+| | | | 10
+| | | 9
+| | 8
+| | | 7
+| | | | 6
+5
+| | | 4
+| | 3
+| 2
+| | 1
+
+
+Height = 5
+
+Is balanced = True
+
+Rebalancing ...
+| | | 15
+| | 14
+| | | 13
+| 12
+| | | 11
+| | 10
+| | | 9
+8
+| | | 7
+| | 6
+| | | 5
+| 4
+| | | 3
+| | 2
+| | | 1

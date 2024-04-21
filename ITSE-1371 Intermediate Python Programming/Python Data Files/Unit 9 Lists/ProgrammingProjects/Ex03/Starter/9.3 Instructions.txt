@@ -1,0 +1,81 @@
+Complete the two list iterators for the array list and the array sorted list using the design strategy discussed in the case study. You can find these iterators in the arraysortedlist.py and arraylist.py files, the method definitions can be found in the arraylistiterator.py file. A synopsis on the design strategy can be found below, for the full design strategy refer to the case study.
+
+From Chapter 9's Case Study
+The list iterator class for an array-based list is a subclass of the list iterator class for an array-based sorted list. The ArraySortedListIterator class includes all the navigational methods and the remove method. Its subclass, the ArrayListIterator class, includes just the insert and replace methods. The relationship between these two classes is shown in Figure 9-9 below.
+
+Illustration shows an implementation strategy for array based list iterators. There are two labeled boxes at two levels with pointing arrows. At the lower level there is Array Sorted List Iterator and Array List Iterator points to it. At the top level Array Sorted List Iterator points to Sorted List Iterator Interface with a dashed arrow and Array List Iterator points to List Iterator Interface with a dashed arrow.
+Figure 9-9
+
+
+In the arraysortedlist.py file, make sure to include the add(), index() and contains() methods from exercise 2.
+
+In the arraylistiterator.py file complete the following:
+
+Complete the implementation of the ArraySortedListIterator() class:
+
+Add the next() method, returns the current item and advances the cursor to the next item and raises: ValueError if no next item.
+Add the previous() method, returns the current item and moves the cursor to the previous item and raises: ValueError if no next item.
+Add the remove() method, Pops the item at the current position and raises: AttibuteError if position is not defined.
+Complete the implementation of the ArrayListIterator() class:
+
+Add the replace() method, replaces the items at the current position with item and raises: AttibuteError if position is not defined
+Add the insert() method, adds item to the end if the current position is undefined, or inserts it at that position. Raises: AttributeError if illegal mutation of backing store
+Make sure that both classes are functioning as expected by using the testsortedlist.py and testlistiterator.py files to test the implementations of each class.
+
+
+
+Your program's output should look like the following:
+
+Test below is on the testsortedlist.py.py file.
+
+The list of items added is: [2013, 61, 1973]
+Expect 3: 3
+Expect the list's string: [61, 1973, 2013]
+Expect True: True
+Expect False: False
+Expect the items on separate lines:
+61
+1973
+2013
+Expect []: []
+Expect []: []
+Expect True: True
+Expect False: False
+Expect two of each item: [61, 61, 1973, 1973, 2013, 2013]
+Expect []: []
+Expect crash with ValueError:
+Traceback (most recent call last):
+  File ".solution/testsortedlist.py", line 38, in <module>
+    test(ArraySortedList)
+  File ".solution/testsortedlist.py", line 36, in test
+    L2.remove(99)
+  File "/root/sandbox/.solution/abstractlist.py", line 41, in remove
+    position = self.index(item)
+  File "/root/sandbox/.solution/abstractlist.py", line 35, in index
+    raise ValueError(str(item) + " not in list.")
+ValueError: 99 not in list.
+
+
+Test below is on the testlistiterator.py file.
+
+TESTING A LIST ITERATOR FOR THE TYPE <class 'arraylist.ArrayList'>
+Create a list with 1-9
+Length: 9
+Items (first to last): [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Forward traversal: 1 2 3 4 5 6 7 8 9 
+Backward traversal: 9 8 7 6 5 4 3 2 1 
+Inserting 10 before 3: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Removing 2: [1, 3, 4, 5, 6, 7, 8, 9]
+Removing all items
+Length: 0
+
+TESTING A LIST ITERATOR FOR THE TYPE <class 'arraysortedlist.ArraySortedList'>
+Create a list with 1-9
+Length: 9
+Items (first to last): [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Forward traversal: 1 2 3 4 5 6 7 8 9 
+Backward traversal: 9 8 7 6 5 4 3 2 1 
+Inserting 10 before 3: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Removing 2: [1, 3, 4, 5, 6, 7, 8, 9]
+Removing all items
+Length: 0

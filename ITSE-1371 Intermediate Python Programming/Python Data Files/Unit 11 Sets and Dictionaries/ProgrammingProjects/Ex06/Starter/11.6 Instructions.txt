@@ -1,0 +1,40 @@
+Adjust the array's capacity and rehashes if the load factor is greater than 0.8 after creating the HashSet.
+
+In the hashset.py file complete the following:
+
+Add the loadFactor() method
+Add the rehash() method
+Make sure to add the __str__, __iter__ and remove() methods in the HashSet class of the hashset.py file from exercise 5.
+
+The modified hashing implementation of a set should compute the load factor and adjust the capacity of the array and rehash the items.
+
+The load factor in this case is the number of occupied array cells divided by the array’s capacity.
+You will need to track the number of occupied cells in a new instance variable.
+The rehash method should save the set’s items in a list, set the set’s size and number of occupied items to 0, double the size of the array, and add the items from the list to the set. You should try to rehash only in the __init__ method, with enough items from a source collection to push the load factor above 0.8.
+You should repeatedly run rehash until the load factor drops below 0.8.
+To test your program run the test method in the testset.py file.
+
+Your program's output should look like the following:
+
+Number of items before add: 0
+Load factor before add: 0.0
+Number of items before add: 1
+Load factor before add: 0.1111111111111111
+Number of items before add: 2
+Load factor before add: ..................
+Number of items before add: 3
+Load factor before add: ..................
+Number of items before add: 4
+Load factor before add: ..................
+Number of items before add: 5
+Load factor before add: ..................
+Number of items before add: 6
+Load factor before add: .................
+Number of items before add: 7
+Load factor before add: 0.7777777777777778
+Number of items before add: 8
+Load factor before add: 0.8888888888888888
+Number of items before add: 9
+Load factor before add: 1.0
+{9, 0, 1, ., ., ., ., ., 7, 8}
+

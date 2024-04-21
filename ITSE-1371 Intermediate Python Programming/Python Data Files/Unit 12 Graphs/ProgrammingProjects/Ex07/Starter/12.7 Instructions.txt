@@ -1,0 +1,30 @@
+In the LinkedDirectedGraph class of the graph.py file complete the following:
+
+Be sure to reuse your solution from Programming Exercise 12.5 as your starter file for the graph.py file.
+
+Add the method makeLabelTable() to the LinkedDirectedGraph class.
+This method builds and returns a dictionary whose keys are the labels of the vertices and whose values are consecutive integers, starting with 0.
+To test your program run the methods in the testdirected.py file.
+
+Your program's output should look like the following:
+
+Output may vary because the list is generated randomly
+
+The listof labels:
+ ['Label1', 'Label4', 'Label3', 'Label9', 'Label6', 'Label2', 'Label8', 'Label5', 'Label7']
+
+The graph:
+ 9 Vertices:  Label1 Label4 Label3 Label9 Label6 Label2 Label8 Label5 Label7
+0 Edges: 
+
+The label table:
+0 Label1
+1 Label2
+2 Label3
+3 Label4
+4 Label5
+5 Label6
+6 Label7
+7 Label8
+8 Label9
+

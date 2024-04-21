@@ -1,0 +1,11 @@
+The German mathematician Gottfried Leibniz developed the following method to approximate the value of π:
+
+π/4 = 1 - 1/3 + 1/5 - 1/7 + …
+
+Write a program that allows the user to specify the number of iterations used in this approximation and displays the resulting value alongside math.pi for comparison. This lab will grade the result to 15 decimal places, 3.141592653589793, rounding to 2 decimal places may cause tests to fail.
+
+Your program's output should look like the following:
+
+Enter the number of iterations: 3
+The approximation of pi is 3.466666666666667
+Compare this to the computer's estimation:  3.141592653589793

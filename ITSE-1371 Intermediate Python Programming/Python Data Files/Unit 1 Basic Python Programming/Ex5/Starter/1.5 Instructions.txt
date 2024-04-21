@@ -1,0 +1,14 @@
+The TidBit Computer Store has a credit plan for computer purchases. There is a 10% down payment and an annual interest rate of 12%. Monthly payments are 5% of the listed purchase price minus the down payment. Write a program that takes the purchase price as input. The program should display a table, with appropriate headers, of a payment schedule for the lifetime of the loan.
+
+Each row of the table should contain the following items:
+
+The month number (beginning with 1)
+The current total balance owed
+The interest owed for that month
+The amount of principal owed for that month
+The payment for that month
+The balance remaining after payment
+The amount of interest for a month is equal to balance * rate / 12
+
+An example table is shown in the image included in the file
+

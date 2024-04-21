@@ -1,0 +1,9 @@
+Add commands to the program of exercise 4, in the filemodel.py file.
+
+Complete the following:
+
+Add a command so that the user can delete the currently selected line, replace it with a new line, or insert a line at the current cursor position.
+The user should also be able to save the current file.
+To test your program run the run method in the fileview.py file.
+
+When testing, choose any filename followed by a command and save the current file.

@@ -1,0 +1,19 @@
+The Payroll Department keeps a list of employee information for each pay period in a text file. The format of each line of the file is:
+
+<last name> <hours worked> <hourly wage>
+
+Write a program that requests a filename from the user and prints a report to the terminal of the wages paid to the employees for the given period.
+The report should be in tabular format with the appropriate header.
+Each line should contain an employee’s name, the hours worked, and the wages paid for that period.
+Be sure that monetary values have the appropriate number of decimal places, 2.
+
+Your program's output should look like the following:
+
+Enter the file name: data.md 
+Name            Hours      Total Pay
+Lambert            34         357.00
+Osborne            22         137.50
+Giacometti          5         503.50
+
+
+The test above is using the data.md file.

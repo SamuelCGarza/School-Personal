@@ -1,0 +1,26 @@
+A sorted bag behaves just like a regular bag but allows the user to visit its items in ascending order with the for loop. Therefore, the items added to this type of bag must have a natural ordering and recognize the comparison operators. Some examples of such items are strings and integers.
+
+Complete the implementation of the array-based sorted bag defined in a new class named ArraySortedBag that supports the capability, like the ArrayBag class, but its in operation can now run in logarithmic time. To accomplish this the ArraySortedBag class must place new items into its array in a sorted order.
+
+A version of the ArrayBag class has been copied into the file arraysortedbag.py as an optional starting point.
+
+In the arraysortedbag.py file, complete the following in the ArraySortedBag class:
+
+Modify the add() method to insert new items in their proper places.
+If the array is empty or the item is last item then add the item
+If the array is not empty or the item is not the last item:
+Check if first item is greater or equal to the new item
+Open a hole for new the item
+Insert the item and update the size
+Finish the implementation of the new defined __contains__ method to implement the new, more efficient search that works as the in operator.
+Returns True if the item is in self, or False otherwise.
+Change all references to ArrayBag to be ArraySortedBag.
+To test your program run the test method in the testbag.py file.
+
+Your program's output should look like the following:
+
+Testing <class 'arraysortedbag.ArraySortedBag'>
+The list of items added is: [1, 8, 9, 4, 7, 5, 10, 6, 3, 2]
+Expect the bag's string, in ascending order: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+Add 5 more items to test increasing the array size:
+Expect the bag's string: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}

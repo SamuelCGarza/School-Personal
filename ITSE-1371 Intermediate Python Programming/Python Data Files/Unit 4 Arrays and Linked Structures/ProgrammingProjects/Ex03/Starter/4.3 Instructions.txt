@@ -1,0 +1,45 @@
+The grow() and shrink() methods should use the strategies discussed in this chapter to increase or decrease the length of the list contained in the array.
+
+Be sure to reuse your solution from Programming Exercise 4.2 as your starter file for the arrays.py file.
+
+In the Array class of the arrays.py file complete the following:
+
+Define the grow() method.
+Add the fillValue to the new cells in the underlying list
+Each call to grow() should double the physical size.
+Make sure that the array’s cells use the fillValue when the array’s size is increased.
+Define the shrink() method.
+Shrink the size by half but not below the default capacity
+Remove those garbage cells from the underlying list
+Make sure that the physical size of the array does not shrink below the user-specified capacity.
+To test your program run the main() method below in the arrays.py file:
+
+def main():
+    
+    a = Array(5)
+    print("Physical size:", len(a))
+    print("Logical size:", a.size())
+    print("Items:", a)
+    a.grow()
+    print("Items:", a)
+    a.grow()
+    print("Items:", a)
+    a.shrink()
+    print("Items:", a)
+    a.shrink()
+    print("Items:", a)
+    a.shrink()
+    print("Items:", a)
+
+if __name__ == "__main__":
+    main()
+
+Your program's output should look like the following:
+Physical size: 5
+Logical size: 0
+Items: [None, None, None, None, None]
+Items: [None, None, None, None, None, None, None, None, None, None]
+Items: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+Items: [None, None, None, None, None, None, None, None, None, None]
+Items: [None, None, None, None, None]
+Items: [None, None, None, None, None]

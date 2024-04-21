@@ -1,0 +1,13 @@
+Python’s pow function returns the result of raising a number to a given power.
+
+Define a function expo() that performs this task. The first argument of this function is the base number, and the second argument is the exponent (nonnegative numbers only). You can use either a loop or a recursive function in your implementation, but do not use Python’s ** operator or pow function.
+State its computational complexity using big-O notation in the docstring.
+To test your program run the main() method in the expo.py file.
+
+Your program's output should look like the following:
+
+0 1
+1 2
+2 4
+3 8
+4 16

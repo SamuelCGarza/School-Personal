@@ -1,0 +1,28 @@
+Complete the list iterator for the LinkedList class in the linkedlist.py file implementation that was discussed in this chapter.
+
+Complete the following methods in the linkedlist.py file:
+
+hasNext() returns True if the iterator has a next item or False otherwise.
+next() returns the current item and advances the cursor to the next item.
+hasPrevious() returns True if the iterator has a previous item or False otherwise.
+previous() returns the current item and moves the cursor to the previous item.
+replace() replaces the items at the current position with item.
+insert() adds item to the end if the current position is undefined, or inserts it at that position.
+remove() removes the item at the current position.
+Verify that exceptions are raised when preconditions are violated.
+
+To test your program run the testListIterator method in the testlistiterator.py file.
+
+Your program's output should look like the following:
+
+TESTING A LIST ITERATOR FOR THE TYPE <class 'arraylist.ArrayList'>
+Create a list with 1-9
+Length: 9
+Items in list (first to last): [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Forward traversal with list iterator: 1 2 3 4 5 6 7 8 9 
+Backward traversal: 9 8 7 6 5 4 3 2 1 
+Inserting 10 before 3: [1, 2, 10, 3, 4, 5, 6, 7, 8, 9]
+Removing 2: [1, 10, 3, 4, 5, 6, 7, 8, 9]
+Replace all items with 0: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Removing all items: Expect []: []
+Length: 0

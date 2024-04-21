@@ -1,0 +1,18 @@
+In the filemodel.py file, write a program that inserts lines of text from a file into a list and allows the user to view and navigate through any line of text from the file.
+
+The program should present a menu of options (provided in fileview.py) that allows the user to enter a filename and to navigate to the first line, the last line, the next line, and the previous line.
+
+In the FileModel class of the filemodel.py file, complete the following:
+
+Complete the implementation of the __init__ method.
+Complete the implementation of the first() method.
+Allows user to navigate to first line of file.
+Complete the implementation of the last() method.
+Allows user to navigate to last line of file.
+Complete the implementation of the next() method.
+Allows user to navigate to next line of file.
+Complete the implementation of the previous() method.
+Allows user to navigate to previous line of file.
+To test your program run the run() method in the fileview.py file.
+
+When testing, choose any filename followed by testing the commands menu. Select a new filename on option 5.

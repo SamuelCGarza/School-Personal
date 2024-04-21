@@ -1,0 +1,34 @@
+In the ArraySortedBag class of the arraysortedbag.py file, complete the following:
+
+Complete the implementation of the __eq__ method discussed in this chapter.
+This method should run in no worse than linear time.
+Returns True if self equals other, or False otherwise.
+To test your program run the test() method in the testbag.py file.
+
+Your program's output should look like the following:
+
+Testing <class 'arraysortedbag.ArraySortedBag'>
+The list of items added is: [2013, 61, 1973]
+Expect 3: 3
+Expect the bag's string: {61, 1973, 2013}
+Expect True: True
+Expect False: False
+Expect the items on separate lines:
+61
+1973
+2013
+Expect {}: {}
+Expect {}: {}
+Expect True: True
+Expect False: False
+Expect two of each item: {61, 1973, 2013, 61, 1973, 2013}
+Expect {}: {}
+Expect crash with KeyError:
+Traceback (most recent call last):
+  File ".solution/testbag.py", line 43, in <module>
+    test(ArraySortedBag)
+  File ".solution/testbag.py", line 39, in test
+    b2.remove(99)
+  File "/root/sandbox/.solution/arraybag.py", line 91, in remove
+    raise KeyError(str(item) + " not in bag")
+KeyError: '99 not in bag'

@@ -1,0 +1,42 @@
+Complete and test the circular array implementation of the queue collection discussed in this chapter.
+
+In the arrayqueue.py file, complete the following:
+
+Complete the implementation of the clear() method
+Makes self become empty.
+Complete the implementation of the add() method
+Inserts item at rear of the queue.
+Complete the implementation of the pop() method
+Removes and returns the item at the front of the queue.
+Raise KeyError if queue is empty
+Verify that exceptions are raised when preconditions are violated and that the implementation adds or removes storage as needed.
+
+In the linkedqueue.py file, complete the following:
+
+Complete the clear() method
+Makes self become empty.
+To test your program run the test method in the testqueue.py file.
+
+Your program's output should look like the following:
+
+Length: 0
+Empty: True
+Add 1-10
+Peeking: 1
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Length: 10
+Empty: False
+Items in clone (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Length of clone after clear: 0
+Pop 3 items: 1 2 3 
+Queue:  [4, 5, 6, 7, 8, 9, 10]
+Adding 11 and 12:
+Queue:  [4, 5, 6, 7, 8, 9, 10, 11, 12]
+Popping items (front to rear): 4 5 6 7 8 9 10 11 12 
+Length: 0
+Empty: True
+Create with 11 items:
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Popping two items:  1 2 [3, 4, 5, 6, 7, 8, 9, 10]
+Adding five items: [3, 4, 5, 6, 7, 8, 9, 10, 0, 1, 2, 3, 4]

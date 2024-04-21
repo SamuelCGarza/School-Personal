@@ -1,0 +1,62 @@
+This exercise asks you to define some functions for manipulating linked structures. You should use the Node and TwoWayNode classes, as defined in this chapter.
+
+Be sure to reuse your solution from Programming Exercise 4.9 as your starter file for the testnode.py file.
+
+In the testnode.py file complete the following:
+
+Complete the implementation of the pop() method that removes the item at a given position from a singly linked structure.
+This function expects a position as a first argument, with
+Precondition: 0 <= index < length(head) of structure
+Raises: IndexError exception if this condition is not met.
+It's second argument is the linked structure, which, of course, cannot be empty.
+The function returns a tuple containing the modified linked structure and the item that was removed. An example call is (head, item) = pop(1, head).
+
+To test your program run the main() method below in the testnode.py file:
+
+def main():
+    """Tests modifications."""
+    head = None
+
+    head = insert(0, "1", head)
+    print("1:", end = " ")
+    printStructure(head)
+
+    (head, item) = pop(0, head)
+    print("1:", item, end = " ")
+    printStructure(head)
+
+    # Add five nodes to the beginning of the linked structure
+    for count in range(1, 6):
+        head = Node(count, head)
+
+    (head, item) = pop(0, head)
+    print("5 4 3 2 1:", item, end = " ")
+    printStructure(head)
+
+    (head, item) = pop(length(head) - 1, head)
+    print("1 4 3 2:", item, end = " ")
+    printStructure(head)
+
+    (head, item) = pop(1, head)
+    print("3 4 2:", item, end = " ")
+    printStructure(head)
+
+    pop(4, head)
+
+if __name__ == "__main__": main()
+
+Your program's output should look like the following:
+
+1: 1 
+1: 1 
+5 4 3 2 1: 5 4 3 2 1 
+1 4 3 2: 1 4 3 2 
+3 4 2: 3 4 2 
+Traceback (most recent call last):
+  File ".solution/testnode.py", line 104, in <module>
+    if __name__ == "__main__": main()
+  File ".solution/testnode.py", line 99, in main
+    pop(4, head)
+  File ".solution/testnode.py", line 45, in pop
+    raise IndexError("Index out of bounds")
+IndexError: Index out of bounds

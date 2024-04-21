@@ -1,0 +1,31 @@
+In the guess-the-number program discussed in this chapter, the computer program thinks of a number and the user inputs guesses, until a correct guess is detected. When we run the starter code the user needs to guess any number and then the computer program will let you know whether it's too low or high.
+
+Use the starter file as a reference for your solution
+
+In the numberguess.py file, complete the following:
+
+Write a program in which these roles are reversed: the user thinks of a number and the computer computes and outputs guesses.
+Like the computer program in the earlier version of this game (starter file), the user must provide hints.
+
+< and > (meaning “my number is smaller” and “my number is larger,” respectively), when the computer guesses incorrectly.
+The user inputs = when the computer guesses correctly.
+The user should input the lower bound and the upper bound of the range of numbers at startup.
+The computer program should need at most round(math.log(high - low + 1, 2)) guesses to get the correct number.
+
+Import the math module to use mathematical functions
+Your program should track the number of guesses.
+Output the message You’re cheating! if the number of incorrect guesses reaches the maximum needed.
+When the program guesses correctly, output the message Hooray, I've got it in x tries!, where x is the number of tries.
+Here is a sample interaction with this program:
+
+Enter the smaller number: 1 
+Enter the larger number: 100
+Your number is 50
+Enter =, <, or >: > 
+Your number is 75 
+Enter =, <, or >: < 
+Your number is 62 
+Enter =, <, or >: < 
+Your number is 56 
+Enter =, <, or >: = 
+Hooray, I've got it in 4 tries!

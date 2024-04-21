@@ -1,0 +1,25 @@
+Modify the Profiler class in the profiler.py file to allow the programmer to study the behavior of the HashTable method get .
+
+Recall that this method must skip over previously occupied cells when probing for a target item.
+This profiler should insert a set of data items into the table
+Remove a specified number of them
+Run get with the remaining items.
+Make sure to add the __len__(), __str__(), getLoadFactor(), getHomeIndex(), getActualIndex(), getProbeCount() and get() methods in the HashTable class of the hashtable.py file from exercise 3.
+
+The programmer should be able to view results of the following:
+
+Total numer of collisions.
+Total number of probes.
+Average number of probes per collision.
+Your program's output should look like the following:
+
+Table: [40, None, ..., ..., ..., ..., 30, 70]
+Table: [True, None, ..., ..., ..., ..., 30, 70]
+Load Factor  Item Accessed  Home Index  Actual Index   Probes
+   0.500            10           2           2             0
+   0.500            30           6           6             0
+   .....            ..           .           .             .
+   .....            ..           .           .             .
+Total collisions: 2
+Total probes: 2
+Average probes per collision: 1.0

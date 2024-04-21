@@ -1,0 +1,48 @@
+In the algorithms.py file, complete the following:
+
+Be sure to reuse your solution from Programming Exercise 12.4 as your starter file for the graph.py and algorithms.py files.
+
+Define a function breadthFirst which performs a breadth-first traversal on a graph, given a start vertex.
+Returns a list of the vertex labels in the order in which the vertices were visited.
+To test your program run the run() method in the GraphDemoView class of the view.py file.
+
+Your program's output should look like the following:
+
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Breadth First Traversal
+  8  Exit the program
+
+Enter a number [1-8]: 2
+Enter the file name: topo.txt
+Graph created successfully
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Breadth First Traversal
+  8  Exit the program
+
+Enter a number [1-8]: 7
+Breadth first order: p s q t r
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Breadth First Traversal
+  8  Exit the program
+
+Enter a number [1-8]: 8
+The test above is inputting the graph from the topo.txt file.
+

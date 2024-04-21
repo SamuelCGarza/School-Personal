@@ -1,0 +1,92 @@
+Modify the emergency room scheduler case study program from Chapter 8, Exercise 8, so that it uses a heap-based priority queue called HeapPriorityQueue located in the heappriorityqueue.py file. The isEmpty()method resides in the AbstractionCollection class.
+
+In the HeapPriorityQueue class of the heappriorityqueue.py file complete the following:
+
+Complete the heap-based priority queue implementation.
+Define the constructor method:
+Add the __init__ method:
+Sets the initial state of self, which includes the contents of sourceCollection, if it's present.
+Define the accessor methods:
+Add the __iter__ method:
+Supports iteration over a view of self
+Add the peek() method:
+Returns the item at the front of the queue.
+Precondition: the queue is not empty.
+Raises: KeyError if the stack is empty.
+Define the mutator methods:
+Add the clear() method:
+Makes self become empty.
+Add the add() method:
+Adds item to the rear of the queue.
+Add the pop() method:
+Removes and returns the item at the front of the queue.
+Precondition: the queue is not empty.
+Raises: KeyError if the queue is empty.
+Postcondition: the front item is removed from the queue.
+In the AbstractionCollectionclass of the abstractcollection.py file complete the following:
+
+Modify the isEmpty() method:
+Returns True if len(self) == 0, or False otherwise.
+It is important that patients are treated in the following order: critical, serious, fair.
+
+To test your program run the main() method in the erapp.py file.
+
+Your program's output should look like the following:
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 1
+
+Enter the patient's name: Ken
+Patient's condition:
+  1  Critical
+  2  Serious
+  3  Fair
+
+Enter a number [1-3]: 1
+Ken is added to the critical list
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 1
+
+Enter the patient's name: Lambert
+Patient's condition:
+  1  Critical
+  2  Serious
+  3  Fair
+
+Enter a number [1-3]: 1
+Lambert is added to the critical list
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 2
+Ken / critical is being treated.
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 3
+Lambert / critical is being treated.
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 4

@@ -1,0 +1,20 @@
+In the Array class of the arrays.py file complete the following:
+
+Add preconditions to the methods __getitem__ and __setitem__.
+The precondition of each method is 0 <= index < size().
+Be sure to raise an IndexError exception if the precondition is not satisfied.
+To test your program run the main() method in the arrays.py file.
+
+Your program's output should look like the following:
+
+Physical size: 10
+Logical size: 0
+Items: [None, None, None, None, None, None, None, None, None, None]
+Traceback (most recent call last):
+  File ".solution/arrays.py", line 69, in <module>
+    main()
+  File ".solution/arrays.py", line 66, in main
+    print(a[0])
+  File ".solution/arrays.py", line 45, in __getitem__
+    raise IndexError("Array index out of bounds")
+IndexError: Array index out of bounds

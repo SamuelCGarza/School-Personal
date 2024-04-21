@@ -1,0 +1,91 @@
+Complete the implementation of the LinkedBST class, in the linkedbst.py file, discussed in this chapter.
+
+In the LinkedBST class of the linkedbst.py file, complete the following:
+
+Complete the implementation of the preorder() method.
+Supports a preorder traversal on a view of self.
+Complete the implementation of the inorder() method.
+Supports an inorder traversal on a view of self.
+Complete the implementation of the postorder() method.
+Supports a postorder traversal on a view of self.
+Complete the implementation of the levelorder() method.
+Supports a levelorder traversal on a view of self.
+To test your program run the main() method in the testbst.py file. You can reference this file to verify the requirements of the LinkedBST class.
+
+Your program's output should look like the following:
+
+Output may vary because the last list is generated randomly
+
+Adding D B A C F E G
+
+Expect True for A in tree:  True
+
+String:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+
+Clone:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+Expect True for tree == clone:  True
+
+For loop: D B A C F E G 
+
+inorder traversal: A B C D E F G 
+
+preorder traversal: D B A C F E G 
+
+postorder traversal: A C B E G F D 
+
+levelorder traversal: D B F A C E G 
+
+Removing all items: A B C D E F G 
+
+Expect 0:  0
+
+Added 1..15:
+| | | | | | | | | | | | | | 15
+| | | | | | | | | | | | | 14
+| | | | | | | | | | | | 13
+| | | | | | | | | | | 12
+| | | | | | | | | | 11
+| | | | | | | | | 10
+| | | | | | | | 9
+| | | | | | | 8
+| | | | | | 7
+| | | | | 6
+| | | | 5
+| | | 4
+| | 3
+| 2
+1
+
+
+Added  [13, 7, 14, 12, 2, 8, 1, 9, 3, 5, 15, 4, 11, 6, 10] 
+| | 15
+| 14
+13
+| | 12
+| | | | | 11
+| | | | | | 10
+| | | | 9
+| | | 8
+| 7
+| | | | | 6
+| | | | 5
+| | | | | 4
+| | | 3
+| | 2
+| | | 1

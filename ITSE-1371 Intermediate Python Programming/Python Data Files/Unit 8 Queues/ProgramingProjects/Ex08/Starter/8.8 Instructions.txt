@@ -1,0 +1,78 @@
+Complete the emergency room scheduler application as described in the case study.
+
+In the ERModel class of the ermodel.py file complete the following:
+
+Complete the implementation of the __init__ method.
+Complete the implementation of the isEmpty() method.
+Returns True if there are patients in the model or False otherwise.
+Complete the implementation of the schedule() method.
+Adds a patient to the schedule.
+Complete the implementation of the treatNext() method.
+Returns the patient treated or None if there are none.
+In the LinkedQueue class of the linkedqueue.py file complete the following:
+
+Complete the implementation of the __iter__ method.
+Supports iteration over a view of self.
+Complete the implementation of the clear() method.
+Makes self become empty.
+To test your program run the main() method in the erapp.py file.
+
+Your program's output should look like the following:
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 1
+
+Enter the patient's name: Ken
+Patient's condition:
+  1  Critical
+  2  Serious
+  3  Fair
+
+Enter a number [1-3]: 1
+Ken is added to the critical list
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 1
+
+Enter the patient's name: Lambert
+Patient's condition:
+  1  Critical
+  2  Serious
+  3  Fair
+
+Enter a number [1-3]: 1
+Lambert is added to the critical list
+
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 2
+Ken / critical is being treated.
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 3
+Lambert / critical is being treated.
+Main menu
+  1  Schedule a patient
+  2  Treat the next patient
+  3  Treat all patients
+  4  Exit the program
+
+Enter a number [1-4]: 4

@@ -1,0 +1,31 @@
+A Matrix class can be used to perform some of the operations found in linear algebra, such as matrix arithmetic.
+
+Develop a Matrix class that uses the built-in operators for arithmetic.
+
+In the matrix.py file, complete the following:
+
+Define the Matrix class and extend the Grid class.
+Complete the implementation of the following methods:
+__init__
+__add__, adds two matrices together.
+Returns the sum of self and other.
+__sub__, subtracts two matrices.
+Returns the difference of self and other.
+__mul__, multiplies two matrices together.
+Returns the product of self and other.
+If two matrices cannot be multiplied, raise an Exception.
+
+To test your program run the main() method in the matrix.py file.
+Your program's output should look like the following:
+
+6 6 6 
+6 6 6 
+6 6 6 
+
+2 2 2 2 
+2 2 2 2 
+2 2 2 2 
+2 2 2 2 
+
+24 24 
+24 24

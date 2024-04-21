@@ -1,0 +1,36 @@
+Complete the adjacency list implementation of the directed graph collection, including the specification and enforcement of preconditions on any methods that should have them.
+
+In the LinkedDirectedGraph class of the graph.py file complete the following:
+
+Complete the addVertex() method
+
+Precondition: a vertex with label must not already be in the graph.
+Raises: AttibuteError if a vertex with label is already in the graph.
+Complete the getVertex() method
+
+Precondition: a vertex with label must already be in the graph.
+Raises: AttibuteError if a vertex with label is not already in the graph.
+Complete the addEdge() method
+
+Connects the vertices with an edge with the given weight.
+Preconditions: vertices with fromLabel and toLabel must already be in the graph. The vertices must not already be connected by an edge.
+Raises: AttibuteError if the vertices are not already in the graph or they are already connected.
+Complete the getEdge() method
+
+Returns the edge connecting the two vertices, or None if no edge exists.
+Precondition: vertices with fromLabel and toLabel must already be in the graph.
+Raises: AttibuteError if the vertices are not already in the graph.
+To test your program run the above methods in the testdirected.py file.
+
+Your program's output should look like the following:
+
+Expect vertices ABC and no edges: 
+3 Vertices:  A B C
+0 Edges: 
+Expect same vertices and edges AB BC CB all with weight 2.5: 
+3 Vertices:  A B C
+3 Edges:  A>B:2.5 B>C:2.5 C>B:2.5
+Expect A:  A
+Edge from A to B: A>B:2.5
+Edge from B to A: None
+Incident edges of A: ['A>B:2.5']

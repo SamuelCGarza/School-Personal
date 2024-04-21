@@ -1,0 +1,36 @@
+In this exercise you will addon to the hashtable.py file to return the index if the item is present or remove the item if it exists and return its index or return -1 otherwise.
+
+In the hashtable.py file complete the following:
+
+Add the __len__, __str__, getLoadFactor(), getHomeIndex(), getActualIndex() and getProbeCount() methods developed from the case study in exercise 1.
+Add the get method to the HashTable class developed in the case study.
+Add the remove method to the HashTable class.
+To test your program run the main method in the hashtable.py file.
+
+Your program's output should look like the following:
+
+Table: [40, None, 10, 50, 20, 60, 30, 70]
+Items and positions during runs of the method get:
+10 2
+.. .
+.. .
+.. .
+.. .
+60 5
+70 7
+Items, positions, and the table during runs of the method remove:
+10 2
+[40, None, True, 50, 20, 60, 30, 70]
+.. .
+[.., ...., True, 50, ...., .., .., 70]
+.. .
+[.., ...., True, 50, True, .., ...., 70]
+.. .
+[...., ...., ...., 50, True, 60, True, 70]
+.. .
+[...., ...., ...., True, True, 60, True, 70]
+60 5
+[True, None, True, True, True, True, True, 70]
+70 7
+[True, None, True, True, True, True, True, True]
+

@@ -1,0 +1,27 @@
+Write a program that allows the user to navigate through the lines of text in a file.
+
+The program prompts the user for a filename and inputs the lines of text into a list.
+The program then enters a loop in which it prints the number of lines in the file and prompts the user for a line number.
+Actual line numbers range from 1 to the number of lines in the file.
+If the input is 0, the program quits.
+If the input is greater than the lines in the file, prompt the user that the input must be less than or equal to the number of lines in the file.
+The program prints the line in the file associated with the input number.
+To test your program run the navigate.py file.
+
+Your program's output should look like the following:
+
+Enter the input file name: data.md
+The file has 3 lines.
+Enter a line number [0 to quit]: 1
+1 :  Lambert 34 10.50
+
+The file has 3 lines.
+Enter a line number [0 to quit]: 2
+2 :  Osborne 22 6.25 
+
+The file has 3 lines.
+Enter a line number [0 to quit]: 3
+3 :  Giacometti 5 100.70
+
+The file has 3 lines.
+Enter a line number [0 to quit]: 0

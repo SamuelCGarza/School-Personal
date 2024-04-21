@@ -1,0 +1,19 @@
+In the path.py file complete the following:
+
+Define the function hasPath().
+This function expects a directed graph and the labels of two vertices as arguments.
+Returns True if there is a path between the two vertices or returns False otherwise.
+To test your program run the main() method in the path.py file.
+
+Your program's output should look like the following:
+
+The graph:
+ 5 Vertices:  A B C D E
+5 Edges:  A>B:3 A>C:2 B>D:1 C>D:1 D>E:2
+Path from B to A: False
+Path from B to B: False
+Path from B to C: False
+Path from B to D: True
+Path from B to E: True
+Path from B to X: False
+

@@ -1,0 +1,33 @@
+Complete the implementation of the link-based set defined in the new class named LinkedSet that implements a set type using linked nodes.
+
+Hint: Much of the code in the LinkedBag class from your solution of the linkedbag.py file in Programming Exercise 5.5 can be reused.
+
+In the linkedset.py file, complete the following:
+
+Complete the accessor methods:
+isEmpty(), returns true if len(self) == 0, or false otherwise.
+__len__, returns the number of items in self.
+__str__, returns the string representation of self.
+__iter__, supports iteration over a view of self.
+__add__, returns anew set containing the contents of self and other
+clone, return a copy of self.
+__eq__, returns true if self equals other, or false otherwise
+count, return the numer of instance of item in self.
+Complete the mutator methods:
+clear, makes self become empty.
+add, adds item to self and ignores the item if it’s already in the set.
+Check array memory and increase it if necessary
+remove, removes item from self if it's in self.
+Check precondition and raise KeyError if necessary
+Search for the node containing the target item, probe will point to the target node, and trailer will point to the one before it, if it exists.
+Unhook the node to be deleted, either the first one or one thereafter.
+Decrement logical size
+
+To test your program run the test method in the testset.py file.
+Your program's output should look like the following:
+
+Testing <class 'linkedset.LinkedSet'>
+The list of items added is: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expect the set's string: {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
+Add same items to test for uniqueness:
+Expect the set's string: {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}

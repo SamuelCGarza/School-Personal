@@ -1,0 +1,39 @@
+Complete a tree-based implementation of a sorted set (treesortedset.py) by using the 2nd strategy discussed in this chapter of including the binary search tree as an instance variable in the sorted set class and manipulating the tree directly by adding the following methods:
+
+In the TreeSortedSet class of the treesortedset.py file, complete the following:
+
+Finish the __init__ implementation
+Finish the implementation of the accessor methods:
+isEmpty()
+__len__
+__str__
+__iter__
+Finish the implementation of the mutator methods:
+add()
+clear()
+remove()
+To test your program run the test method in the testset.py file.
+
+Your program's output should look like the following:
+
+Testing type:  <class 'treesortedset.TreeSortedSet'>
+The list of items added is: [2013, 61, 1973, 1973]
+Length, expect 3: 3
+Expect the set's string:  {61, ...., 2013}
+Expect True: ....
+Expect False: False
+Expect the items on separate lines:
+..
+1973
+....
+Expect {}:  {}
+Expect {}:  {}
+Expect True: ....
+Expect False: False
+s1:  {61, 1973, ....} s2:  {.., .., 2013}
+s1 | s2:  {.., ...., 2013}
+s1 & s2:  {61, ....}
+s1 - s2:  {....}
+s2 - s1:  {44}
+Expect {}:  {}
+

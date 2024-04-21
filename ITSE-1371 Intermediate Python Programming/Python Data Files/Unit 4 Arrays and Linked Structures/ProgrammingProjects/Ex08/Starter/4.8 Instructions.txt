@@ -1,0 +1,15 @@
+This exercise asks you to define some functions for manipulating linked structures. You should use the Node and TwoWayNode classes, as defined in this chapter.
+
+Create a tester module in the testnode.py file that contains your function definitions and your code for testing them.
+
+In the testnode.py file, complete the following:
+
+Complete the implementation of the length() function (not len).
+This function expects a singly linked structure as an argument.
+Returns the number of items in the structure.
+To test your program run the main() method in the testnode.py file.
+
+Your program's output should look like the following:
+
+0: 0
+5: 5

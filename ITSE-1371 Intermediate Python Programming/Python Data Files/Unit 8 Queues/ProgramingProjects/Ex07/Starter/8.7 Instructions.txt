@@ -1,0 +1,11 @@
+The simulator’s interface asks the user to enter the average number of minutes required to process a customer. However, as written, the simulation assigns the same processing time to each customer. In real life, processing times vary around the average.
+
+Be sure to reuse your solution from Programming Exercise 8.6 as your starter file for the customer.py file.
+
+In the Customer class of the customer.py file, complete the following:
+
+Modify the __init__ method:
+Set the amountOfServiceNeeded so that it randomly generates the service times between 1 and (serviceNeeded * 2 + 1).
+To test your program run the main() method in the marketapp.py file.
+
+When testing the servicing time per cashier will be random rather than static

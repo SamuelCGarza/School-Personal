@@ -1,0 +1,14 @@
+The add() method resizes the array properly when items are added to the array.
+
+In the arraybag.py file define the add() method in the ArrayBag class by completing the following:
+
+Check array memory and increase it if necessary
+To test your program run the test() method in the testbag.py file.
+
+Your program's output should look like the following:
+
+Testing <class 'arraybag.ArrayBag'>
+The list of items added is: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expect the bag's string: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+Add 5 more items to test increasing the array size:
+Expect the bag's string: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}

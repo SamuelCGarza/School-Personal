@@ -1,0 +1,46 @@
+The insert() and pop() methods should use the strategies discussed in this chapter, including adjusting the length of the array, if necessary.
+
+Be sure to reuse your solution from Programming Exercise 4.3 as your starter file for the arrays.py file.
+
+In the Array class of the arrays.py file complete the following:
+
+Define the insert() method:
+The insert() method expects a position and an item as arguments and inserts the item at the given position.
+If the position is greater than or equal to the array’s logical size, the method inserts the item after the last item currently available in the array.
+Define the pop() method:
+The pop() method expects a position as an argument and removes and returns the item at that position.
+The pop() method’s precondition is 0 <= index < size().
+The pop() method should also reset the vacated array cell to the fill value.
+To test your program run the main() method below in the arrays.py file:
+
+def main():
+    a = Array(5)
+    print ("Physical size:", len(a))
+    print ("Logical size:", a.size())
+    print ("Items:", a)
+    for item in range(4):
+        a.insert(0, item)
+    print ("Items:", a)
+    a.insert(1, 77)
+    print ("Items:", a)
+    a.insert(10, 10)
+    print ("Items:", a)
+    print(a.pop(3))
+    print ("Items:", a)
+    for count in range(5):
+        print(a.pop(0), end = " ")
+    print ()
+
+if __name__ == "__main__":
+    main()
+
+Your program's output should look like the following:
+Physical size: 5
+Logical size: 0
+Items: [None, None, None, None, None]
+Items: [3, 2, 1, 0, None]
+Items: [3, 77, 2, 1, 0]
+Items: [3, 77, 2, 1, 0, 10, None, None, None, None]
+1
+Items: [3, 77, 2, 0, 10, None, None, None, None, None]
+3 77 2 0 10

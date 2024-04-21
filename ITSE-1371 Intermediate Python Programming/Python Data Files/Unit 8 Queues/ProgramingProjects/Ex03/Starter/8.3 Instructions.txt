@@ -1,0 +1,36 @@
+When you send a file to be printed on a shared printer, it is put onto a print queue with other jobs. Anytime before your job prints, you can access the queue to remove it. Thus, some queues support a remove operation.
+
+The remove() method should expect an item as an argument. It should remove the given item in the queue or raise an exception if the item is not found.
+
+In the arrayqueue.py file, complete the following:
+
+Define the remove() method to the ArrayQueue class implementation.
+In the linkedqueue.py file, complete the following:
+
+Define the remove() method to the LinkedQueue class implementation.
+To test your program run the test() method in the testqueue.py file.
+
+Your program's output should look like the following:
+
+Length: 0
+Empty: True
+Add 1-10
+Peeking: 1
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Length: 10
+Empty: False
+Items in clone (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Length of clone after clear: 0
+Pop 3 items: 1 2 3 
+Queue:  [4, 5, 6, 7, 8, 9, 10]
+Adding 11 and 12:
+Queue:  [4, 5, 6, 7, 8, 9, 10, 11, 12]
+Popping items (front to rear): 4 5 6 7 8 9 10 11 12 
+Length: 0
+Empty: True
+Create with 11 items:
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Items (front to rear): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Popping two items:  1 2 [3, 4, 5, 6, 7, 8, 9, 10]
+Adding five items: [3, 4, 5, 6, 7, 8, 9, 10, 0, 1, 2, 3, 4]
+Removing 6: [3, 4, 5, 7, 8, 9, 10, 0, 1, 2, 3, 4]

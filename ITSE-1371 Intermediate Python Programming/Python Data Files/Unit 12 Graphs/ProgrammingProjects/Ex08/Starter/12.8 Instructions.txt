@@ -1,0 +1,56 @@
+In the LinkedDirectedGraph class of the graph.py file complete the following:
+
+Be sure to reuse your solution from Programming Exercise 12.7 as your starter file for the graph.py file.
+
+Add the method makeDistanceMatrix() to the LinkedDirectedGraph class.
+This method calls the makeLabelTable() method (see Exercise 7) to build a table and then uses the table to build and return a distance matrix.
+You should define INFINITY as a class variable with the value "-".
+To test your program run the methods in the testdirected.py file.
+
+The tester program builds and views a matrix which includes a function that prints a distance matrix with the rows and columns labeled as in Figure 12-20.
+
+Figure shows a directed graph and its adjacency matrix. The directed graph has the vertex B labeled 1 with an edge pointing to the vertex A that is labeled 0. The vertex B has an edge pointing to the vertex C which is labeled 2. The vertex B also has an edge pointing to the vertex D which is labeled 3. The vertex D has an edge that points to the vertex C. A matrix is shown nearby. The rows are labeled A, B, C, D and also with the numbers 0, 1, 2, 3. The columns are also labeled similarly. The row entries for A are 0, 0, 0, 0. The row entries of B are 1, 0, 1, 1. The row entries for C are 0, 0, 0, 0. The row entries for D are 0, 0, 1, 0.
+Figure 12-19 A weighted graph
+Figure shows the initial distance matrix for the graph in figure 12-19. The matrix has rows and columns from A to G labeled with numbers from 0 to 6. The row entries are as follows. Row A: 0, 80, infinity, infinity, infinity, infinity, infinity. Row B: 80, 0, 79, infinity, 153, infinity, infinity. Row C: infinity, 79, 0, 78, infinity, 74, infinity. Row D: infinity, infinity, 78, 0, 98, 89, infinity. Row E: infinity, 153, infinity, 98, 0, infinity, infinity. Row F: infinity, infinity, 74, 89, infinity, 0, 67. Row G: infinity, infinity, infinity, infinity, infinity, 67, 0.
+Figure 12-20 The initial distance matrix for the graph in Figure 12-19
+
+
+Your program's output should look like the following:
+
+The list of labels:
+['a', 'g', 'e', 'b', 'd', 'f', 'c']
+
+The graph:
+7 Vertices:  a g e b d f c
+0 Edges: 
+
+The label table:
+0 a
+1 b
+2 c
+3 d
+4 e
+5 f
+6 g
+
+The distance matrix:
+0 80 - - - - - 
+- 0 79 - 153 - - 
+- - 0 78 - 74 - 
+- - - 0 98 89 - 
+- - - - 0 - - 
+- - - - - 0 67 
+- - - - - - 0 
+
+
+The labeled distance matrix:
+      a   b   c   d   e   f   g  
+      0   1   2   3   4   5   6  
+
+0 a   0  80  -   -   -   -   -  
+1 b   -   0  79  -  153  -   -  
+2 c   -   -   0  78  -  74  -  
+3 d   -   -   -   0  98 89  -  
+4 e   -   -   -   -   0   -   -  
+5 f   -   -   -   -   -   0  67 
+6 g   -   -   -   -   -   -   0  

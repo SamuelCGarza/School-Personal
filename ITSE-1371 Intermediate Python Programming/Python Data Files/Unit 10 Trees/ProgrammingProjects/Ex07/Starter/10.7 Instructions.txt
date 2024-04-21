@@ -1,0 +1,33 @@
+In the expressiontree.py file, complete the implementation of the node classes, LeafNode and InteriorNode for the expression tree developed in this chapter.
+
+The LeafNode class, represents an integer and the InteriorNode class represents an operator and its two operands.
+
+In the LeafNode class of the expressiontree.py file, complete the following:
+
+Define the __init__ method.
+Define the value() method.
+Define the __str__ method.
+Define the infix() method.
+Define the prefix() method.
+Define the postfix() method.
+In the InteriorNode class of the expressiontree.py file, complete the following:
+
+Define the __init__ method.
+Define the value() method.
+Calculates and returns the correct value of the node.
+Define the __str__ method.
+Make sure the values below are returned in the proper order.
+
+Define the infix() method.
+Define the prefix() method.
+Define the postfix() method.
+Define the computeValue() method.
+Utility routine to compute a value.
+To test your program run the main() method in the expressiontree.py file.
+
+Your program's output should look like the following:
+
+Expect ((4 * (2 + 3) - (2 + 3)): ((4 * (2 + 3)) - (2 + 3))
+Expect - * 4 + 2 3 + 2 3       : - * 4 + 2 3 + 2 3
+Expect 4 2 3 + * 2 3 + -       : 4 2 3 + * 2 3 + -
+Expect 15                      : 15

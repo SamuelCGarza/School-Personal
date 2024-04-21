@@ -1,0 +1,38 @@
+A set is an unordered collection with the same interface as a bag. However, the items in a set are unique, whereas a bag can contain duplicate items.
+
+Be sure to reuse your solution from Programming Exercise 5.5 as your starter file for the arraybag.py and linkedbag.py files.
+
+Complete the implementation of the array-based set defined in the new class named ArraySet that implements an array-based set type.
+
+Hint: Much of the code in the ArrayBag class from the arraybag.py file can be reused.
+
+In the arrayset.py file, complete the following:
+
+Complete the accessor methods:
+isEmpty(), returns true if len(self) == 0, or false otherwise.
+__len__, returns the number of items in self.
+__str__, returns the string representation of self.
+__iter__, supports iteration over a view of self.
+__add__, returns anew set containing the contents of self and other
+clone, return a copy of self.
+__eq__, returns true if self equals other, or false otherwise
+count, return the numer of instance of item in self.
+Complete the mutator methods:
+clear, makes self become empty.
+add, adds item to self and ignores the item if it’s already in the set.
+Check array memory and increase it if necessary
+remove, removes item from self if it's in self.
+Check precondition and raise KeyError if necessary
+Search for the index of the target item
+Shift items to the left of target up by one position
+Decrement logical size
+Check array memory here and decrease it if necessary
+
+To test your program run the test method in the testset.py file.
+Your program's output should look like the following:
+
+Testing <class 'arrayset.ArraySet'>
+The list of items added is: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expect the set's string: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+Add same items to test for uniqueness:
+Expect the set's string: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}

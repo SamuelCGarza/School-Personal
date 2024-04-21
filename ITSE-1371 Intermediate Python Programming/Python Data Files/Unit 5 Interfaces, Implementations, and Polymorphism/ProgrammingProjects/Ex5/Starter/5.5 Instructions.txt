@@ -1,0 +1,19 @@
+The clone() method expects no arguments when called, and returns an exact copy of the type of bag on which it is called.
+
+Be sure to reuse your solution from Programming Exercise 5.4 as your starter file for the arraybag.py file.
+
+In the arraybag.py file complete the following:
+
+Define the clone() method to the ArrayBag class.
+Returns a copy of self.
+In the linkedbag.py file complete the following:
+
+Define the clone() method to the LinkedBag class.
+Returns a copy of self.
+
+For example, the variable bag2 would contain the numbers 2, 3 and 4 at the end of the following code segment:
+
+bag1 = ArrayBag([2,3,4])
+bag2 = bag1.clone()
+bag1 == bag2 # Returns True
+bag1 is bag2 # Returns False

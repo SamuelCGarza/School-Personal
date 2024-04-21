@@ -1,0 +1,44 @@
+In the Array class of the arrays.py file complete the following:
+
+Be sure to reuse your solution from Programming Exercise 4.4 as your starter file for the arrays.py file.
+
+Define the __eq__ method.
+Python runs this method when an Array object appears as the left operand of the == operator.
+The method returns True if its argument is:
+Also an Array,
+Has the same logical size as the left operand
+The pair of items at each logical position in the two arrays are equal.
+Otherwise, the method returns False.
+To test your program run the main() method below in the arrays.py file:
+
+def main():
+    a = Array(5)
+    for item in range(4):
+        a.insert(0, item)
+    b = a
+    c = Array(5)
+    for item in range(4):
+        c.insert(0, item)
+    print("True:", a == b)
+    print("True:", a is b)
+    print("True:", a == c)
+    print("False:", a is c)
+    c.insert(10, 10)
+    print("False:", a == c)
+    c.pop(c.size() - 1)
+    c[2] = 6
+    print("False:", a == c)
+    d = []
+    print("False:", a == d)
+
+if __name__ == "__main__":
+    main()
+
+Your program's output should look like the following:
+True: True
+True: True
+True: True
+False: False
+False: False
+False: False
+False: False

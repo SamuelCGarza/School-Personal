@@ -1,0 +1,44 @@
+In the algorithms.py file, complete the following:
+
+Be sure to reuse your solution from Programming Exercise 12.2 as your starter file for the graph.py file.
+
+Complete the implementation of the spanTree() method.
+To test your program run the run() method in the GraphDemoView class of the view.py file.
+
+Your program's output should look like the following:
+
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 2
+Enter the file name: topo.txt
+Graph created successfully
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 5
+Tree: p>s:0 p>q:0 s>t:0 q>r:0
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 7
+The test above is inputting the graph from the topo.txt file.
+

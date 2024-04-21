@@ -1,0 +1,45 @@
+A successor is the smallest item in the tree that is greater than the given item. A predecessor is the largest item in the tree that is less than the given item.
+
+Be sure to reuse your solution from Programming Exercise 10.3 as your starter file for the linkedbst.py file.
+
+In the LinkedBST class of the linkedbst.py file, complete the following:
+
+Define the successor() method.
+Returns the smallest item that is larger than item, or None if there is no such item.
+Expects an item as an argument and returns an item or None.
+Define the predecessor() method
+Returns the largest item that is smaller than item, or None if there is no such item.
+Expects an item as an argument and returns an item or None.
+Note: The successor may exist even if the given item is not present in the tree.
+
+To test your program run the main() method in the testbst.py file.
+
+Your program's output should look like the following:
+
+Adding D B A C F E G
+
+String:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+Predecessor of D:  C
+Successor of D:  E
+Predecessor of B:  A
+Successor of B:  C
+Predecessor of A:  None
+Successor of A:  B
+Predecessor of C:  B
+Successor of C:  D
+Predecessor of F:  E
+Successor of F:  G
+Predecessor of E:  D
+Successor of E:  F
+Predecessor of G:  F
+Successor of G:  None
+Predecessor of Q:  G
+Successor of Q:  None

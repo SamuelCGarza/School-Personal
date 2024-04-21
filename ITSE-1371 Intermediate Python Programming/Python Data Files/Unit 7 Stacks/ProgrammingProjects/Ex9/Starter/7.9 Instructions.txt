@@ -1,0 +1,73 @@
+Write a program that solves the maze problem discussed earlier in this chapter. You should use the Grid class developed in Chapter 4, Exercise 7 in this problem.
+
+Take a text file as an input for the maze's description.
+Display the maze based off the description.
+Program attempts to find solution.
+Displays the result.
+Displays the maze again.
+In the maze.py file, complete the following:
+
+Complete the implementation of the getMazeFromFile() method.
+Reads the maze from a text file
+Returns a grid that represents it.
+Complete the implementation of the findStartPos() method.
+Returns the position of the start symbol in the grid.
+Complete the implementation of the getOut() method.
+(row,column) is the position of the start symbol in the maze.
+States are tuples of coordinates of cells in the grid.
+If a cell has not been visited, mark it and push adjacent unvisited positions onto the stack.
+Try NORTH, SOUTH, EAST and WEST coordinates
+Returns True if the maze can be solved or False otherwise.
+To test your program run the main() method in the maze.py file.
+
+Your program's output should look like the following:
+
+Enter a file name for the maze: maze.txt
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* * * * * * *                                                             * * * * * * * *   * * * * 
+* * * * * * *   * * * * * * * * * * * * * *   * * * * * * * * * * * * *   * * * * * * * *   * * * * 
+* * * * * * *   * * * * * * * * * * * * * *   * * *                   *   * * *             * * * * 
+P               * * * * * * * * * * * * * *   * *     * * * * * *     *   * * *   * * * *   * * * * 
+* * * * * * *   * * *                   * *   *     * * * * * * *                 * * * *   * * * * 
+* * * * * * *   * * *   * * * * * * *   * *   *     * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * *   * * *   * * * * * * *   * *         * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * *   * * *   * * * * * * *   * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * *   * * *   * *                                             * * * * * * * * *   * * * * 
+* * *           * * *   * *   * * * *   * * * *   * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * *   * * * * * * * * * *   * * * *   * * * *                               * * * * * *   * * * * 
+* * *   * * * * * * * * * *   * * * *   * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * *   * * * * * * * * * *   * * * *   * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * *                         * * * *   * * * * * * * * * * * *   * * * * * * * * * * * *   * * * * 
+* * * * * * * *   * * * * * * * * * *   * * * * * * * * * * * *   * * * * * * * * * * * *   * * * * 
+* * * * * * * *   * * * * * * * * * *   * * * * * * * * * * * *             * * * * * * *   * * * * 
+* * * * * * * *             * * * * *   * * * * * * * * * * * *   * * * *   * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * *                             * * * *   * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *                         T 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Maze solved:
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* * * * * * *                                                             * * * * * * * *   * * * * 
+* * * * * * *   * * * * * * * * * * * * * *   * * * * * * * * * * * * *   * * * * * * * *   * * * * 
+* * * * * * *   * * * * * * * * * * * * * *   * * *                   *   * * *             * * * * 
+. . . . . . . . * * * * * * * * * * * * * *   * *     * * * * * *     *   * * *   * * * *   * * * * 
+* * * * * * * . * * *                   * *   *     * * * * * * *                 * * * *   * * * * 
+* * * * * * * . * * *   * * * * * * *   * *   *     * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * * . * * *   * * * * * * *   * *         * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * * . * * *   * * * * * * *   * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * * * * * . * * *   * * . . . . . . . . . . . . . . . . . . . . . . * * * * * * * * *   * * * * 
+* * * . . . . . * * *   * * . * * * * . * * * * . * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * . * * * * * * * * * * . * * * * . * * * * . . . . . . . . . . . . . . . * * * * * *   * * * * 
+* * * . * * * * * * * * * * . * * * * . * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * . * * * * * * * * * * . * * * * . * * * * * * * * * * * * * * * * * * * * * * * * *   * * * * 
+* * * . . . . . . . . . . . . * * * * . * * * * * * * * * * * *   * * * * * * * * * * * *   * * * * 
+* * * * * * * *   * * * * * * * * * * . * * * * * * * * * * * *   * * * * * * * * * * * *   * * * * 
+* * * * * * * *   * * * * * * * * * * . * * * * * * * * * * * * . . . . . . * * * * * * *   * * * * 
+* * * * * * * *             * * * * * . * * * * * * * * * * * * . * * * * . * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * * . . . . . . . . . . . . . . * * * * . * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * . * * * * * * *   * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * . * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * . . . . . . . . . . . . T 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

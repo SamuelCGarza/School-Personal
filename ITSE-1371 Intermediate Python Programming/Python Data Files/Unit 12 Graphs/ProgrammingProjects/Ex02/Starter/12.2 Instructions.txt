@@ -1,0 +1,92 @@
+Complete the classes in the case study and test the operations to input a graph and display it.
+
+In the LinkedDirectedGraph class of the graph.py file, complete the following:
+
+Add all the methods from your solution of Programming Exercise 12.1 to the graph.py file:
+addVertex()
+getVertex()
+addEdge()
+getEdge()
+In the view.py file, complete the following:
+
+Test the operations from an inputted graph by executing the run() method
+In the terminal, select option 1 and input a graph from the keyboard.
+Enter atleast one edge to the inputted graph
+You must execute the program and complete the steps above, to check that you have Successfully added a graph through input from the keyboard
+
+Your program's output should look like the following:
+
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 1
+Enter an edge or return to quit: p>s:0
+Enter an edge or return to quit: p>q:0
+Enter an edge or return to quit: s>t:0
+Enter an edge or return to quit: 
+Enter the start label: p
+Graph created successfully
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 3
+4 Vertices:  p s q t
+3 Edges:  p>s:0 p>q:0 s>t:0
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 4
+Paths:
+ ['Under development']
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 5
+Tree: Under development
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 6
+Sort: t s q p
+Main menu
+  1  Input a graph from the keyboard
+  2  Input a graph from a file
+  3  View the current graph
+  4  Single source shortest paths
+  5  Minimum spanning tree
+  6  Topological sort
+  7  Exit the program
+
+Enter a number [1-7]: 7
+The test above had input edges of p>s:0, p>q:0 and s>t:0 with a start label of p.
+

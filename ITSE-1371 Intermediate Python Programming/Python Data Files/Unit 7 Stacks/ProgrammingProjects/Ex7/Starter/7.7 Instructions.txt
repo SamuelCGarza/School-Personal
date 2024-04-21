@@ -1,0 +1,38 @@
+Modify the program of Programming Exercise 7.6 so that it checks the infix string for syntax errors as it converts to postfix. The error-detection and recovery strategy should be similar to the one used in the case study.
+
+Be sure to reuse your solution from Programming Exercise 7.6 as your starter file for the scanner.py, tokens.py and converter.py files.
+
+In the IFToPFConverter class of the converter.py file, complete the following:
+
+Complete the implementation of the __str__() method.
+Checks if the expressionSoFar is empty or not
+Returns the portion of the expression processed or none if empty, before the exception was raised
+Checks if the operatorStack is empty or not operatorStack.isEmpty()
+Returns the operators on the stack or if empty print The stack is empty
+Modify the convert() method to raise exceptions
+If a token is unrecognized raise an AttributeError: Unrecognized symbol
+If the operatorStack is empty raise an AttributeError: Too few operators
+Raise this exception for every operator
+Complete the implementation of the conversionStatus method that when the converter detects a syntax error, it should raise an exception.
+The main function catches in a try-except statement.
+The main function can then call conversionStatus to obtain the information to print when an error occurs.
+This information should include the portion of the expression scanned until the error is detected.
+The error messages should also be as specific as possible.
+To test your program run the main() method in the converter.py file.
+
+Your program's output should look like the following:
+
+Enter an infix expression: 3 * 0
+Postfix: 3 0 * 
+Enter an infix expression: 3 4 2 5
+Too few operators 
+Portion of expression processed: 3 4 2 5 
+The stack is empty
+Enter an infix expression: 5 + 6 - 3 & 9
+Unrecognized symbol 
+Portion of expression processed: 5 + 6 - 3 & 
+Operators on the stack          : [-]
+Enter an infix expression: 2 $ 3
+Unrecognized symbol 
+Portion of expression processed: 2 $ 
+The stack is empty

@@ -1,0 +1,28 @@
+Python’s for loop allows the programmer to add or remove items in the collection over which the loop is iterating. Some designers worry that changing the structure of a collection during iteration might cause program crashes. The remedy is to make the for loop read-only, by disallowing mutations to the collection during iteration. You can detect such mutations by keeping a count of them and determining if this count goes up at any point within the collection’s __iter__ method. When this happens, you can raise an exception to prevent the computation from going forward.
+
+In the arraybag.py file complete the following in the ArrayBag class:
+
+In the __init__ method, include a new instance variable named modCount, which is set to 0.
+In the __iter__ method include a temporary variable named modCount, which is set initially to the value of the instance variable self.modCount.
+Immediately after an item is yielded within the __iter__ method, you raise an exception if the values of the two mod counts are not equal.
+In the mutator method clear() set modCount to 0
+In the mutator methods add() and remove() increment the modCount variable.
+To test your implementation of ArrayBag run the test method in the testbag.py file.
+
+Your program's output should look like the following:
+
+Testing <class 'arraybag.ArrayBag'>
+The list of items added is: [9, 8, 2, 3, 4, 7, 1, 5, 10, 6]
+Expect the bag's string, in ascending order: {9, 8, 2, 3, 4, 7, 1, 5, 10, 6}
+Add 5 more items to test increasing the array size:
+Expect the bag's string: {9, 8, 2, 3, 4, 7, 1, 5, 10, 6, 11, 12, 13, 14, 15}
+Traceback (most recent call last):
+  File "testbag.py", line 26, in <module>
+    test(ArrayBag)
+  File "testbag.py", line 24, in test
+    for i in b:
+  File "/root/sandbox/arraybag.py", line 48, in __iter__
+    raise AttributeError("Mutation not allowed in loop")
+AttributeError: Mutation not allowed in loop
+
+The output list may vary given that it's a random set of numbers range(1, 11)

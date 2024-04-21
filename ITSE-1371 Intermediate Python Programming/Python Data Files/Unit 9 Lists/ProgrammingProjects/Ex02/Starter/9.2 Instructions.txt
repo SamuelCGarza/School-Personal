@@ -1,0 +1,40 @@
+Complete the array sorted list implementation in the arraysortedlist.py file that was discussed in this chapter.
+
+In the ArraySortedList class of the arraysortedlist.py file, complete the following:
+
+Complete the add() method, adds item to self.
+Empty or last item, place at the end
+Search for first item >= new item
+Open a hole for new item
+Insert item and update size
+Complete the index() method.
+Precondition: item is in the list
+Returns the position of item
+Raises: ValueError if the item is not in the list
+Complete the contains() method.
+Returns True if item is in the list, or False otherwise
+You may defer the completion of the list iterator for sorted lists until the next project.
+
+Your program's output should look like the following:
+
+The list of items added is: [2013, 61, 1973]
+Expect 3: 3
+Expect the list's string: [61, 1973, 2013]
+Expect True: True
+Expect False: False
+Expect the items on separate lines:
+61
+1973
+2013
+Expect []: []
+Expect []: []
+Expect True: ....
+Expect False: ....
+Expect two of each item: [61, .., ...., ...., ...., 2013]
+Expect []: []
+Expect crash with ValueError:
+...
+...
+...
+...
+ValueError: 99 not in list.

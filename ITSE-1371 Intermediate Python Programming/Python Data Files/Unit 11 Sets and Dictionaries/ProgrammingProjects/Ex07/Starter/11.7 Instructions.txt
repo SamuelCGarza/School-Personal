@@ -1,0 +1,34 @@
+Complete the hashing implementation of a hash-based dictionary.
+
+This hashing implementation uses the bucket/chaining strategy quite similar to that of the HashSet class from Exercise 5.
+
+In the hashdict.py file complete the following methods:
+
+__iter__
+clear()
+pop()
+Test the hashing implementation with the main() method located in the testdict.py file.
+
+Your program's output should look like the following:
+
+Length:  5
+
+The dictionary:  {1:Value1, 2:Value2, 3:Value3, 4:Value4, 5:Value5}
+
+The keys: [1, ., ., ., 5]
+
+The values: ['Value1', '......', '......', '......', 'Value5']
+
+The entries: ['1:Value1', '........', '........', '........', '5:Value5']
+
+Key Value (using []): 1 Value1 . ...... . ...... . ...... 5 Value5 
+Replace Value1 with ValueZ:  {1:ValueZ, ........, ........, ........, 5:Value5}
+
+Delete all keys:
+ValueZ
+......
+......
+......
+Value5
+
+Length:  0

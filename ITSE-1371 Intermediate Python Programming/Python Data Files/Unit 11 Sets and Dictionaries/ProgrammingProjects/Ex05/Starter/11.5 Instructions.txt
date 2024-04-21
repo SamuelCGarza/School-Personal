@@ -1,0 +1,39 @@
+Complete the hashing implementation of a hash-based set.
+
+Thus, the implementation must maintain an array and represent entries in such a manner as to allow chaining.
+
+In the hashset.py file complete the following methods:
+
+__str__
+__iter__
+remove()
+
+In the AbstractSet class of the abstractset.py file, complete the following:
+
+Complete the implementation of the __eq__ function
+Returns True if self equals other, or False otherwise.
+Test the hashing implementation with the test() method located in the testset.py file.
+
+Your program's output should look like the following:
+
+Testing <class 'hashset.HashSet'>
+The list of items added is: [2013, 61, 1973, 1973]
+Length, expect 3: 3
+Expect the set's string: {1973, ...., 61}
+Expect True: True
+Expect False: ....
+Expect the items on separate lines:
+1973
+....
+61
+Expect {}: {}
+Expect {}: {}
+Expect True: True
+Expect False: False
+s1: {...., 2013, ..} s2: {...., 61, ..}
+s1 | s2: {1973, ...., .., 44}
+s1 & s2: {...., 61}
+s1 - s2: {....}
+s2 - s1: {44}
+Expect {}: {}
+

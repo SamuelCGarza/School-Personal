@@ -1,0 +1,23 @@
+The Fibonacci sequence is, by definition, the integer sequence in which every number after the first two is the sum of the two preceding numbers.
+
+In the fib.py file, complete the following:
+
+Modify the recursive Fibonacci function to employ the memoization technique discussed in this chapter.
+Form a base case for any number in the sequence, except for the first and second, is the sum of the previous two
+A base case in a recursive function tells the function when to stop (to avoid going into an infinite loop)
+
+The function should expect a dictionary as an additional argument. The top-level call of the function receives an empty dictionary.
+The function’s keys and values should be the arguments and values of the recursive calls.
+Use the counter object discussed in this chapter to count the number of recursive calls.
+Counter is already provided in the main() method
+
+To test your program run the main() method in the fib.py file.
+
+Your program's output should look like the following:
+
+   n         fib
+   2           1
+   4           3
+   8          21
+  16         987
+  32     2178309

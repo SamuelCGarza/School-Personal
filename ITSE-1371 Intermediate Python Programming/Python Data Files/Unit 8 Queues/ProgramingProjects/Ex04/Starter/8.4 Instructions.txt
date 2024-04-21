@@ -1,0 +1,39 @@
+Modify the supermarket checkout simulator so that it simulates a store with many checkout lines that have their own cashiers containing the customers processed per cashier, average wait time in each checkout line and the amount of customers left in each checkout line. Add the number of cashiers as a new user input.
+
+In the cashier.py file, complete the following:
+
+Modify the __init__ method:
+Maintains a cashier's number with the number as an instance of __init_.
+Modify the __str__ method:
+Handles totalCustomerWaitTime as a float type
+Checks if there is check out lines where no customers have been served
+If no customers were served set aveWaitTime to 0.00
+Only store the results of the simulation and don't print them. The results should only be printed from the model.
+In the marketmodel.py file, complete the following:
+
+At instantiation, the model should create a list of these cashiers.
+Modify the runSimulation method:
+When a customer is generated, it should be sent to a cashier randomly chosen from the list of cashiers.
+On each tick for the length of the simulation, each cashier should be told to serve its next customer.
+Modify the __str__ method:
+At the end of the simulation, the results for each cashier should be displayed.
+To test your program run the main method in the marketapp.py file.
+
+Your program's output should look like the following:
+
+Enter the total running time: 30
+Enter the average processing time per customer: 3
+Enter the probability of a new arrival: 1
+Enter the number of cashiers: 6
+
+----------------------------------------
+CASHIER CUSTOMERS   AVERAGE     LEFT IN
+        PROCESSED   WAIT TIME   LINE
+   1        4          0.25        0
+   2        5          0.00        0
+   3        7          0.86        0
+   4        6          1.50        0
+   5        4          0.25        0
+   6        4          0.50        0
+
+Output will vary because a cashier is randomly chosen.

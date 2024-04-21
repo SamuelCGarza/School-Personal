@@ -1,0 +1,12 @@
+Modify the LinkedBag class discussed in Chapter 5, Exercise 7 (provided in linkedbag.py), so that it becomes a subclass of AbstractBag.
+
+Be sure to reuse your solution from Programming Exercise 6.1 as your starter file for the arraysortedbag.py file.
+
+In the LinkedBag class of the linkedbag.py file, complete the following:
+
+Import the AbstractBag class from the abstractbag.py file
+Modify the __init__ so that it contains the contents of sourceCollection from the AbstractBag class, if it's present.
+Remove any methods that are redundant from the LinkedBag class.
+Be sure to retain in the LinkedBag class only those methods that cannot be moved to AbstractBag.
+
+To test your program run the test() method in the testbag.py file.

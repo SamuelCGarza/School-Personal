@@ -1,0 +1,8 @@
+Complete the new class located in file arraysortedset.py for sorted sets.
+
+Be sure to reuse your solution from Programming Exercise 6.5 as your starter file for the arraysortedbag.py, linkedbag.py, abstractbag.py, arrayset.py and linkedset.py files.
+
+Define def __init__(self, sourceCollection = None):
+Define def add(self, item):
+
+To test your program run the run() method in the testset.py file.

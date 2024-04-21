@@ -1,0 +1,25 @@
+In the LinkedBST class of the linkedbst.py file, complete the following:
+
+Be sure to reuse your solution from Programming Exercise 10.4 as your starter file for the linkedbst.py file.
+
+Add and define the rangeFind() method.
+This method expects two items as arguments that specify the bounds of a range of items to be found in the tree.
+The method traverses the tree, builds and returns a sorted list of the items found within the specified range.
+Sorts the nodes in the provided range
+Sorts numerical nodes
+To test your program run the main() method in the testbst.py file.
+
+Your program's output should look like the following:
+
+Adding D B A C F E G
+
+String:
+| | G
+| F
+| | E
+D
+| | C
+| B
+| | A
+
+Items in range C..E: ['C', 'D', 'E']

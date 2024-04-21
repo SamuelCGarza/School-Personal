@@ -1,0 +1,52 @@
+This exercise asks you to define some functions for manipulating linked structures. You should use the Node and TwoWayNode classes, as defined in this chapter.
+
+Be sure to reuse your solution from Programming Exercise 4.8 as your starter file for the testnode.py file.
+
+In the testnode.py file, complete the following:
+
+Complete the implementation of the insert method that inserts an item into a singly linked structure at a given position.
+The function expects three arguments:
+item, index
+position, newItem
+linked structure, head
+If the position is greater than or equal to the structure’s length, the function inserts the item at its end.
+Searches for the node at position index -1 or the last position
+Inserts new node after node at position index -1 or the last position
+The function returns the modified linked structure.
+An example call of the function, where head is a variable, is either an empty link or refers to the first node of a structure, head = insert(1, data, head).
+
+To test your program run the main() method below in the testnode.py file.
+
+def main():
+    """Tests modifications."""
+    head = None
+
+    head = insert(0, "1", head)
+    print("1:", end = " ")
+    printStructure(head)
+
+    head = insert(1, "2", head)
+    print("1 2:", end = " ")
+    printStructure(head)
+
+    head = insert(0, "0", head)
+    print("0 1 2:", end = " ")
+    printStructure(head)
+
+    head = insert(3, "3", head)
+    print("0 1 2 3:", end = " ")
+    printStructure(head)
+
+    head = insert(1, "9", head)
+    print("0 9 1 2 3:", end = " ")
+    printStructure(head)
+
+if __name__ == "__main__": main()
+
+Your program's output should look like the following:
+
+1: 1 
+1 2: 1 2 
+0 1 2: 0 1 2 
+0 1 2 3: 0 1 2 3 
+0 9 1 2 3: 0 9 1 2 3 

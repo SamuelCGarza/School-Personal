@@ -1,0 +1,12 @@
+Be sure to reuse your solution from Programming Exercise 6.7 as your starter file for the arraysortedbag.py, linkedbag.py, abstractbag.py, arrayset.py, linkedset.py and arraysortedset.py files.
+
+In the ArrayBag class of the arraybag.py file, complete the following:
+
+Complete the implementation of the __contains__ method to perform the customized search.
+Eliminate the redundant search by tracking the position of the target item in an instance variable, targetIndex.
+In the case of an array-based bag, this position would be –1 at startup and whenever a target item is not found.
+If the in operator finds a target item, the position variable is set to that item’s index in the array; otherwise, it is reset to –1.
+After the remove() method checks its precondition, no search loop is necessary.
+The method can just close the hole in the array using the position variable.
+
+To test your program run the test() method in the testset.py file.

@@ -1,0 +1,22 @@
+Complete the parser developed in the starter files of this chapter.
+
+The parser should also handle the exponentiation operator ^. Recall that this operator has a higher precedence than * and / and is right associative. This means that the expression 2 ^ 3 ^ 4 is equivalent to 2 ^ (3 ^ 4), not (2 ^ 3) ^ 4.
+
+Be sure to reuse your solution from Programming Exercise 10.8 as your starter file for the expressiontree.py and tokens.py files.
+
+In the Parser class of the parsers.py file, complete the following:
+
+To handle the syntax and semantics of exponent, rename the rule (and method in the parser) from factor to primary.
+Add a new rule named factor to the grammar, and a corresponding method to the parser.
+A factor now is a primary, followed by an optional ^ operator and another factor.
+To test your program run the run() method in the parserapp.py file.
+
+Your program's output should look like the following:
+
+Enter an infix expression: 2 ^ (3 ^ 4)       
+Prefix: ^ 2 ^ 3 4
+Infix: (2 ^ (3 ^ 4))
+Postfix: 2 3 4 ^ ^
+Value: 2417851639229258349412352
+
+The test above tested the expression in the instructions. You are not limited to test other expressions.

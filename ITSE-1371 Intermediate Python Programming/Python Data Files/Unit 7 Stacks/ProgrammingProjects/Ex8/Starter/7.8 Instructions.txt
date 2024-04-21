@@ -1,0 +1,38 @@
+Integrate the infix to postfix converter from Exercise 7 into the expression evaluator of the case study. Thus, the input to the program is a purported infix expression, and its output is either its value or an error message. The program’s main components are the converter and the evaluator.
+
+If the converter detects a syntax error, the evaluator is not to run. Thus, the evaluator can assume that its input is a syntactically correct postfix expression (which may still contain semantic errors, such as the attempt to divide by 0).
+
+Be sure to reuse your solution from Programming Exercise 7.7 as your starter file for the scanner.py, tokens.py and converter.py files and your solution from Programming Exercise 7.4 as your starter file for the model.py file.
+
+In the PFEvaluatorModel class of the model.py file, complete the following:
+
+Import the IFToPFConverter class from the converter.py file.
+Modify the evaluate() method.
+The evaluator will no longer be the scanner, set to None
+The converter will now scan the sourceStr and creates a scanner with it.
+The scanner is then passed as an argument to the constructor of the converter object and set as postfix
+The evaluator then creates an object of postfix
+The postfix expression is then evaluated
+Return the value of the evaluation
+Modify the evaluationStatus method.
+Check to see if an evaluation has been done first.
+To test your program run the run() method in the evaluatorapp.py file.
+
+Tests will be run against both converter.py and evaluatorapp.py.
+
+Your program's output should look like the following:
+
+Enter an infix expression: 10 + 10
+10 + 10 
+20
+Enter an infix expression: 11
+11 
+Too few operators 
+Portion of expression processed: 11 
+The stack is empty
+
+Enter an infix expression: 2 $ 3
+2 $ 3 
+Unrecognized symbol 
+Portion of expression processed: 2 $ 
+The stack is empty

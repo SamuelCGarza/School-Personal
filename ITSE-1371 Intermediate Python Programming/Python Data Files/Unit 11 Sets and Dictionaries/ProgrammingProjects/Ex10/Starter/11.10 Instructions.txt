@@ -1,0 +1,29 @@
+The Python function zip is used to pack data into dictionary.
+
+zip expects a list of keys and a list of values as arguments and returns a new iterable zip object.
+Passing this object to the dict function builds and returns a dictionary with these data.
+Thus, this function behaves like the constructor __init__ methods for the dictionaries discussed in this chapter.
+
+A function unzip would be the inverse of zip.
+
+unzip expects a dictionary as an argument and returns a tuple, which contains a list of the dictionary’s keys and a list of their corresponding values.
+Make sure to remove the methods __len__(), __str__() and __add__() from exercise 9 to the treesorteddict.py file.
+
+In the abstractdict.py file complete the following:
+
+Finish the get method in the AbstractDict class.
+Add a method named unzip to the AbstractDict class that performs this operation for all dictionaries in the collections framework.
+To test your program run the main method in the testdict.py file.
+
+Your program's output should look like the following:
+
+The dictionary:  {1:Value1, 2:Value2, 3:Value3, 4:Value4, 5:Value5}
+
+The keys: [1, 2, 3, 4, 5]
+
+The values: ['Value1', '......', '......', '......', 'Value5']
+
+The items: ['1:Value1', '.........', '.........', '......... '5:Value5']
+
+Unzip: ([1, ., ., ., 5], ['Value1', '......', '......', '......', 'Value5'])
+
